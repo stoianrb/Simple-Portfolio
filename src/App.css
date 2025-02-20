@@ -1,0 +1,162 @@
+/* Body background and settings */
+body {
+  background-image: url('/logo.png');
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asigură că body-ul are înălțimea minimă a ferestrei */
+  justify-content: space-between; /* Spațiere egală între conținutul principal și footer */
+}
+
+/* Navbar - Meniul de navigație */
+nav {
+  background-color: #333;
+  padding: 1rem;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 10px 15px;
+}
+
+nav a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* Section content */
+.content {
+  padding: 60px 20px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-grow: 1; /* Permite ca secțiunea să crească pentru a ocupa restul spațiului disponibil */
+}
+
+/* Logo styling */
+.logo {
+  height: 8em;
+  padding: 2em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Stiluri pentru buton */
+.button {
+  background-color: #646cff; /* Culoare de fundal albastru */
+  color: white; /* Culoare text */
+  font-size: 18px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+  background-color: #5555cc; /* Schimbă culoarea la hover */
+  transform: scale(1.05); /* Face butonul să se mărească puțin la hover */
+}
+
+.button:active {
+  transform: scale(0.98); /* Face butonul să se micșoreze puțin la click */
+}
+
+/* Butonul pentru schimbarea limbii */
+.language-button {
+  background-color: #61dafb; /* Culoare specifică React */
+  margin: 10px;
+}
+
+.language-button:hover {
+  background-color: #4fa3d1; /* Culoare mai închisă la hover */
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Card styling for a more modern look */
+.card {
+  padding: 2em;
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 30px;
+  width: 90%;
+  max-width: 900px;
+}
+
+.card h2 {
+  font-size: 32px;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.card p {
+  font-size: 22px;
+  line-height: 1.8;
+  font-weight: 400;
+}ic
+
+/* Footer styling */
+footer {
+  color: #aaa;
+  font-size: 14px;
+  text-align: center;
+  padding: 1em;
+  width: 100%;
+  position: relative;
+  background-color: #333; /* Încarcă background-ul footer-ului */
+  margin-top: auto; /* Face ca footer-ul să fie plasat la fundul paginii */
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fff;
+}

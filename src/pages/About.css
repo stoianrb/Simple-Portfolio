@@ -1,0 +1,138 @@
+/* Stiluri generale pentru About */
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 3rem;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f7f7f7;
+    line-height: 1.8;
+}
+
+/* Titluri */
+.about-container h1, 
+.about-container h2 {
+    font-size: 2.5rem;
+    color: #222;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Paragrafe */
+.about-container p {
+    font-size: 1.4rem;
+    color: #555;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+/* Liste */
+.about-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.about-container ul li {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+/* Link-uri */
+.about-container a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.about-container a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Distanțare între secțiuni */
+.about-container section {
+    margin-bottom: 3rem;
+}
+
+/* Stiluri pentru secțiunile Skills și Other Information */
+.about-container .skills, 
+.about-container .other-info {
+    margin-top: 2rem;
+    display: block; /* Elementele sunt una sub alta */
+}
+
+.about-container .skills ul, 
+.about-container .other-info ul {
+    display: block;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+/* Titluri pentru Skills și Other Information */
+.about-container .skills h3, 
+.about-container .other-info h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Secțiuni individuale pentru limbi, experiență și educație */
+.about-container .languages, 
+.about-container .experience, 
+.about-container .education {
+    margin-bottom: 1.5rem;
+}
+
+/* Responsivitate pentru dispozitive mici */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 1.5rem;
+    }
+
+    .about-container h1, 
+    .about-container h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .about-container p, 
+    .about-container ul li {
+        font-size: 1.2rem;
+    }
+
+    .about-container section {
+        margin-bottom: 2rem;
+    }
+
+    .about-container .skills ul, 
+    .about-container .other-info ul {
+        display: block;
+    }
+
+    .about-container .skills, 
+    .about-container .languages, 
+    .about-container .experience, 
+    .about-container .education {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+}
+
+/* Buton pentru schimbarea limbii */
+.language-button {
+    font-size: 12px;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.language-button:hover {
+    background-color: #45a049;
+}

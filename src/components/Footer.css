@@ -1,0 +1,35 @@
+/* src/pages/Footer.css */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    position: relative; /* Îndepărtăm fixed pentru a-l plasa corect la baza paginii */
+    bottom: 0;
+    margin-top: auto; /* Face ca footer-ul să fie plasat la fundul paginii */
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Pentru a face footer-ul să ocupe întreaga lățime și să fie mai vizibil */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex-grow: 1; /* Permite ca secțiunea să ocupe restul spațiului disponibil */
+}
